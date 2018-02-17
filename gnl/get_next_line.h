@@ -18,11 +18,11 @@
 
 # define BUFF_SIZE 1
 
-typedef struct				s_fbuffer
+typedef struct				s_gnl
 {
 	int						fd;
-	char					*data;
-}							t_fbuffer;
+	char					*str;
+}							t_gnl;
 
 int							get_next_line(const int fd, char **line);
 

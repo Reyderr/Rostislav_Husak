@@ -6,47 +6,47 @@
 /*   By: rhusak <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/16 10:06:27 by rhusak            #+#    #+#             */
-/*   Updated: 2018/02/16 10:06:35 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/02/17 11:31:06 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-static t_fbuffer	*find_create_fbuffer(const int fd, t_list **alst)
+static t_gnl	*check_old_heap(const int fd, t_list **llst)
 {
 	t_list		*elm;
-	t_fbuffer	fbuffer;
+	t_gnl		heap;
 
-	elm = *alst;
+	elm = *llst;
 	while (elm)
 	{
-		if (((t_fbuffer *)(elm->content))->fd == fd)
+		if (((t_gnl *)(elm->content))->fd == fd)
 			return (elm->content);
 		elm = elm->next;
 	}
-	fbuffer.fd = fd;
-	if (!(fbuffer.data = ft_strnew(BUFF_SIZE)))
+	heap.fd = fd;
+	if (!(heap.str = ft_strnew(BUFF_SIZE)))
 		return (NULL);
-	if (!(elm = ft_lstnew(&fbuffer, sizeof(t_fbuffer))))
+	if (!(elm = ft_lstnew(&heap, sizeof(t_gnl))))
 		return (NULL);
-	ft_lstadd(alst, elm);
-	return ((*alst)->content);
+	ft_lstadd(llst, elm);
+	return ((*llst)->content);
 }
 
-static int			read_line(t_fbuffer *fbuffer)
+static int			read_line(t_gnl *heap)
 {
 	int			count;
 	char		buff[BUFF_SIZE + 1];
 	char		*tmp;
 
 	count = 1;
-	while (count > 0 && !ft_strchr(fbuffer->data, '\n'))
+	while (count > 0 && !ft_strchr(heap->str, '\n'))
 	{
-		if ((count = read(fbuffer->fd, &buff, BUFF_SIZE)) == -1)
+		if ((count = read(heap->fd, &buff, BUFF_SIZE)) == -1)
 			return (-1);
 		buff[count] = 0;
-		tmp = fbuffer->data;
-		fbuffer->data = ft_strjoin(fbuffer->data, buff);
+		tmp = heap->str;
+		heap->str = ft_strjoin(heap->str, buff);
 		free(tmp);
 		ft_memset(buff, 0, count);
 	}
@@ -62,34 +62,34 @@ static char			*update_line(char *str)
 	return (ft_strsub(str, 0, pos - str));
 }
 
-static void			shift_data(char **data)
+static void			move_str(char **str)
 {
 	char *tmp;
 	char *pos;
 
-	tmp = *data;
+	tmp = *str;
 	if (!(pos = ft_strchr(tmp, '\n')))
-		*data = ft_strnew(0);
+		*str = ft_strnew(0);
 	else
-		*data = ft_strdup(pos + 1);
+		*str = ft_strdup(pos + 1);
 	free(tmp);
 }
 
 int					get_next_line(const int fd, char **line)
 {
 	static t_list	*lst;
-	t_fbuffer		*fbuffer;
+	t_gnl			*heap;
 	char			*tmp;
 	int				count;
 
 	if (!line || fd < 0)
 		return (-1);
-	fbuffer = find_create_fbuffer(fd, &lst);
-	if (((count = read_line(fbuffer)) == -1) || fbuffer == NULL)
+	heap = check_old_heap(fd, &lst);
+	if (((count = read_line(heap)) == -1) || heap == NULL)
 		return (-1);
-	*line = update_line(fbuffer->data);
-	tmp = fbuffer->data;
-	shift_data(&(fbuffer->data));
+	*line = update_line(heap->str);
+	tmp = heap->str;
+	move_str(&(heap->str));
 	if (!**line && !count)
 		return (0);
 	else
