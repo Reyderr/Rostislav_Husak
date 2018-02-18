@@ -33,7 +33,7 @@ static t_gnl	*check_old_heap(const int fd, t_list **llst)
 	return ((*llst)->content);
 }
 
-static int			read_line(t_gnl *heap)
+static int		read_line(t_gnl *heap)
 {
 	int			count;
 	char		buff[BUFF_SIZE + 1];
@@ -53,7 +53,7 @@ static int			read_line(t_gnl *heap)
 	return (count);
 }
 
-static char			*update_line(char *str)
+static char		*update_line(char *str)
 {
 	char	*pos;
 
@@ -62,7 +62,7 @@ static char			*update_line(char *str)
 	return (ft_strsub(str, 0, pos - str));
 }
 
-static void			move_str(char **str)
+static void		move_str(char **str)
 {
 	char *tmp;
 	char *pos;
@@ -75,7 +75,7 @@ static void			move_str(char **str)
 	free(tmp);
 }
 
-int					get_next_line(const int fd, char **line)
+int				get_next_line(const int fd, char **line)
 {
 	static t_list	*lst;
 	t_gnl			*heap;
