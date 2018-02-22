@@ -1,0 +1,4 @@
+81.1.51.10.in-addr.arpa. 30	IN	PTR	ldap-proxy.42.fr.
+
+dig -x 10.51.1.81
+host 10.51.1.81
