@@ -1,1 +1,1 @@
-ifconfig | grep "en0" 
+ifconfig en0 
