@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "* 4 * * * 0 sudo apt update >> /var/log/update_script.log" >> 02.txt; sudo crontab 02.txt

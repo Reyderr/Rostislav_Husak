@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo echo "0 0 * * *
+					if ["8f111d100ea459f68d333d63a8ef2205" != $(sudo md5sum /etc/crontab | awk '{printf "%s", $1}') ];
+					then echo "/etc/crontab update" | mail -s "/etc/crontab file has been modified!" root" >> mod.txt 
+					crontab mod.txt; sudo rm mod.txt

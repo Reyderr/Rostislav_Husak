@@ -1,0 +1,3 @@
+#! /bin/bash
+
+sudo du -c  $* | sort -n -r
