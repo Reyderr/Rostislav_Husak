@@ -1,3 +1,0 @@
-docker inspect -f \
-    '{{range $index, $value := .Config.Env}}{{println $value}}{{end}}' \
-    spawning-pool | grep MYSQL_
