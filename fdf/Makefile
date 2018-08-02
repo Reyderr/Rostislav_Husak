@@ -1,67 +1,58 @@
-# **************************************************************************** #
+#******************************************************************************#
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+         #
+#    By: rhusak <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/07/20 11:27:26 by rhusak            #+#    #+#              #
-#    Updated: 2018/07/20 11:48:37 by rhusak           ###   ########.fr        #
+#    Created: 2018/08/01 16:05:16 by rhusak            #+#    #+#              #
+#    Updated: 2018/08/01 18:00:38 by rhusak           ###   ########.fr        #
 #                                                                              #
-# **************************************************************************** #
+#******************************************************************************#
 
-NAME	= fdf
+NAME = fdf
 
-SRC		= main.c \
-		  reader.c \
-		  map.c \
-		  window.c \
-		  draw.c \
-		  matrix.c \
-		  mouse.c \
-		  keyboard.c \
-		  image.c \
-		  lineclip.c
+SRC =		./src/main.c \
+			./src/read.c \
+		  	./src/map.c \
+		  	./src/window.c \
+		  	./src/draw.c \
+		  	./src/color_fun.c \
+		  	./src/keys.c \
+		  	./src/picture.c \
+		  	./src/rotate.c \
 
-OBJ		= $(addprefix $(OBJDIR),$(SRC:.c=.o))
-CC		= gcc
-CFLAGS	= -Wall -Wextra -Werror -g
-MLX		= ./miniLibX/
-MLX_LIB	= $(addprefix $(MLX),mlx.a)
-MLX_INC	= -I ./miniLibX
-MLX_LNK	= -L ./miniLibX -l mlx -framework OpenGL -framework AppKit
-FT		= ./libft/
-FT_LIB	= $(addprefix $(FT),libft.a)
-FT_INC	= -I ./libft
-FT_LNK	= -L ./libft -l ft
-SRCDIR	= ./src/
-INCDIR	= ./includes/
-OBJDIR	= ./obj/
+OBJ = $(SRC:.c=.o)
 
-all: obj $(FT_LIB) $(MLX_LIB) $(NAME)
+FLAGS = -Wall -Wextra -Werror
 
-obj:
-	mkdir -p $(OBJDIR)
+FLAGSMLX = -L/usr/local/include -lmlx -framework OpenGL -framework AppKit
 
-$(OBJDIR)%.o:$(SRCDIR)%.c
-	$(CC) $(CFLAGS) $(MLX_INC) $(FT_INC) -I $(INCDIR) -o $@ -c $<
+LIBFT = -L./libft -lft
 
-$(FT_LIB):
-	make -C $(FT)
+CC = gcc
 
-$(MLX_LIB):
-	make -C $(MLX)
+INCLUDES = ./inc
+
+LIBFT_PATH = ./libft
+
+all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) $(MLX_LNK) $(FT_LNK) -lm -o $(NAME)
+	make -C $(LIBFT_PATH)
+	$(CC) $(FLAGS) -o $(NAME) $(OBJ) -I$(INCLUDES)  $(FLAGSMLX) $(LIBFT)
+
+%.o: %.c
+	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
-	rm -rf $(OBJDIR)
-	make -C $(FT) clean
-	make -C $(MLX) clean
+	rm -rf $(OBJ)
+	make -C $(LIBFT_PATH) clean
 
 fclean: clean
 	rm -rf $(NAME)
-	make -C $(FT) fclean
+	make -C $(LIBFT_PATH) fclean
 
 re: fclean all
+
+.PHONY: all clean fclean re
