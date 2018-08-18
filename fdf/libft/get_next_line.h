@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rhusak <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/01 14:58:25 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/01 14:58:26 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/18 15:52:06 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ typedef struct	s_gnl
 	int			nl;
 	int			fd;
 }				t_gnl;
-int				get_next_line(int const fd, char **line);
+int				get_next_line(int const fd, char **line, int ret);
+
 #endif

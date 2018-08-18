@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/20 11:41:23 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/01 17:54:06 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/18 16:00:35 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int		main(int ac, char **av)
 	fd = open(av[1], O_RDONLY);
 	if (fd < 0 || !ft_read_file(fd, &map))
 		return (ft_error("ERROR : File error"));
-	if ((mlx = ft_create(ft_strjoin("fdf", av[1]))) == NULL)
+	if ((mlx = ft_create()) == NULL)
 		return (ft_error("ERROR : mlx create error"));
 	mlx->map = map;
 	ft_epileptic(&color);
@@ -56,6 +56,5 @@ int		main(int ac, char **av)
 	mlx_hook(mlx->window, 17, 0, ft_exit_x, mlx);
 	ft_helper(mlx->mlx, mlx->window);
 	mlx_loop(mlx->mlx);
-	system("leakes");
 	return (0);
 }

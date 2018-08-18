@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/01 14:58:14 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/01 17:50:59 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/18 15:51:53 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,15 +107,15 @@ int		read_buffer(t_gnl *gnl, t_list **lst, char **temp, char **line)
 	return (0);
 }
 
-int		get_next_line(int const fd, char **line)
+int		get_next_line(int const fd, char **line, int ret)
 {
 	static t_list	*lst;
 	t_gnl			*gnl;
 	char			*temp;
-	int				ret;
 
 	if (!line || BUFF_SIZE < 1 || !(*line = ft_strnew(0)) || read(fd, 0, 0))
 		return (-1);
+	ft_strdel(line);
 	gnl = get_gnl(&lst, fd);
 	temp = ft_strnew(0);
 	while (gnl->count > 0)

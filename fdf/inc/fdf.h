@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/20 11:52:29 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/01 17:44:13 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/18 16:00:16 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ int						ft_line(int fd, t_list **lst, int nbr_p);
 t_map					*ft_get_map(int wd, int hg);
 int						ft_fill_map(t_map **map, t_list *list);
 int						ft_read_file(int fd, t_map **map);
-t_mlx					*ft_create(char *text);
+t_mlx					*ft_create();
 t_picture				*ft_del_picture(t_mlx *mlx, t_picture *img);
 t_picture				*ft_new_picture(t_mlx *mlx);
 void					ft_line_create(t_mlx *mlx, t_point p1, t_point p2);

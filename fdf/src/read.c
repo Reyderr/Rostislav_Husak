@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/20 16:11:16 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/02 13:21:47 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/18 16:05:59 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int			ft_line(int fd, t_list **lst, int nbr_p)
 	char	*line;
 	int		gnl_ret;
 
-	while ((gnl_ret = get_next_line(fd, &line)))
+	while ((gnl_ret = get_next_line(fd, &line, 0)))
 	{
 		if (nbr_p == -1)
 			nbr_p = (int)ft_countwords(line, ' ');
@@ -52,9 +52,7 @@ int			ft_line(int fd, t_list **lst, int nbr_p)
 		ft_strdel(&line);
 	}
 	if (nbr_p == -1 || gnl_ret == -1)
-	{
 		return (ft_cleaning(lst, NULL));
-	}
 	ft_reverse(lst);
 	return (1);
 }

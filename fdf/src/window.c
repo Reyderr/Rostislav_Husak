@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/23 10:56:03 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/02 12:55:01 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/18 16:05:11 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ t_mlx		*ft_mlxdel(t_mlx *mlx)
 	return (NULL);
 }
 
-t_mlx		*ft_create(char *text)
+t_mlx		*ft_create(void)
 {
 	t_mlx	*mlx;
 
@@ -44,7 +44,7 @@ t_mlx		*ft_create(char *text)
 		return (NULL);
 	if ((mlx->mlx = mlx_init()) == NULL ||
 		(mlx->window = mlx_new_window(mlx->mlx, WIN_WD,
-			WIN_HG, text)) == NULL ||
+			WIN_HG, "FDF")) == NULL ||
 		(mlx->cam = ft_memalloc(sizeof(t_cam))) == NULL ||
 		(mlx->picture = ft_new_picture(mlx)) == NULL)
 		return (ft_mlxdel(mlx));
