@@ -6,25 +6,25 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/21 13:06:50 by rhusak            #+#    #+#             */
-/*   Updated: 2018/07/21 14:27:29 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/24 12:02:44 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_delete_split(char ***split)
+int	ft_delete_split(char ***spliter)
 {
 	char	**str;
 	int		i;
 
 	i = 0;
-	str = *split;
+	str = *spliter;
 	while (*str)
 	{
 		ft_strdel(str);
 		i++;
-		str = &(*split)[i];
+		str = &(*spliter)[i];
 	}
-	ft_memdel((void **)split);
+	ft_memdel((void **)spliter);
 	return (0);
 }

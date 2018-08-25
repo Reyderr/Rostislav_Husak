@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.c                                           :+:      :+:    :+:   */
+/*   ft_association.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/23 12:27:22 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/01 15:00:22 by rhusak           ###   ########.fr       */
+/*   Created: 2018/08/01 14:59:36 by rhusak            #+#    #+#             */
+/*   Updated: 2018/08/24 11:57:42 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_abs(int i)
+char	*ft_association(char *a, char *b)
 {
-	if (i < 0)
-		return (-i);
-	return (i);
+	char	*str;
+
+	str = ft_strjoin(a, b);
+	ft_strdel(&a);
+	ft_strdel(&b);
+	return (str);
 }

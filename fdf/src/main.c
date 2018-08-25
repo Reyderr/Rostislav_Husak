@@ -6,13 +6,13 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/20 11:41:23 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/18 16:00:35 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/24 16:02:24 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/fdf.h"
 
-int		ft_error(char *str)
+int		ft_er(char *str)
 {
 	ft_putendl(str);
 	return (1);
@@ -41,16 +41,16 @@ int		main(int ac, char **av)
 	t_color	color;
 
 	if (ac < 2)
-		return (ft_error("ERROR : Arguments < 2"));
+		return (ft_er("ERROR : Arguments < 2"));
 	fd = open(av[1], O_RDONLY);
 	if (fd < 0 || !ft_read_file(fd, &map))
-		return (ft_error("ERROR : File error"));
+		return (ft_er("ERROR : File error"));
 	if ((mlx = ft_create()) == NULL)
-		return (ft_error("ERROR : mlx create error"));
+		return (ft_er("ERROR : mlx create error"));
 	mlx->map = map;
 	ft_epileptic(&color);
 	mlx->color = color;
-	ft_render(mlx);
+	ft_processing(mlx);
 	mlx_hook(mlx->window, 2, 3, ft_press_button, mlx);
 	mlx_key_hook(mlx->window, ft_exit, mlx);
 	mlx_hook(mlx->window, 17, 0, ft_exit_x, mlx);

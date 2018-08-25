@@ -6,40 +6,87 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/01 14:58:14 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/18 15:51:53 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/24 17:02:47 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "get_next_line.h"
-#include <unistd.h>
 
-char	*get_append(t_gnl *gnl)
+void			ft_delete(t_list **list, int fd, char **str)
+{
+	t_list	*p;
+	t_gnl	*gnl;
+	t_list	**tmp;
+
+	tmp = list;
+	while (*tmp)
+	{
+		gnl = (t_gnl *)((*tmp)->content);
+		if (gnl->fd == fd)
+			break ;
+		*tmp = ((*tmp)->next);
+	}
+	if (*tmp)
+	{
+		p = (*tmp)->next;
+		ft_strdel(&(gnl->buffer));
+		ft_memdel((void **)&gnl);
+		ft_memdel((void **)tmp);
+		*tmp = p;
+	}
+	ft_strdel(str);
+}
+
+
+char			*ft_connect(t_gnl *gnl)
 {
 	int i;
 
 	i = 0;
-	gnl->nl = 0;
+	gnl->str = 0;
 	while (gnl->i + i < gnl->count)
 	{
-		if (gnl->buf[gnl->i + i] == '\n')
+		if (gnl->buffer[gnl->i + i] == '\n')
 		{
-			gnl->nl = 1;
+			gnl->str = 1;
 			i++;
 			break ;
 		}
 		i++;
 	}
 	gnl->i += i;
-	return (ft_strsub(gnl->buf, gnl->i - i, i - gnl->nl));
+	return (ft_strsub(gnl->buffer, gnl->i - i, i - gnl->str));
 }
 
-t_gnl	*get_gnl(t_list **lst, int fd)
+int				ft_rd_buff(t_gnl *gnl, t_list **list, char **tmp, char **line)
+{
+	if (gnl->i == gnl->count)
+	{
+		gnl->count = read(gnl->fd, gnl->buffer, BUFF_SIZE);
+		if (gnl->count == -1)
+		{
+			ft_delete(list, gnl->fd, tmp);
+			return (-1);
+		}
+		gnl->i = 0;
+		if (gnl->count == 0)
+		{
+			if (gnl->str == 0)
+			{
+				*line = *tmp;
+				return (1);
+			}
+		}
+	}
+	return (0);
+}
+
+t_gnl			*ft_start(t_list **list, int fd)
 {
 	t_gnl	*gnl;
 	t_list	*temp;
 
-	temp = *lst;
+	temp = *list;
 	while (temp)
 	{
 		gnl = (t_gnl *)(temp->content);
@@ -48,90 +95,42 @@ t_gnl	*get_gnl(t_list **lst, int fd)
 		temp = temp->next;
 	}
 	gnl = (t_gnl *)ft_memalloc(sizeof(t_gnl));
-	gnl->buf = ft_strnew(BUFF_SIZE);
+	gnl->buffer = ft_strnew(BUFF_SIZE);
 	gnl->count = BUFF_SIZE;
 	gnl->i = BUFF_SIZE;
 	gnl->fd = fd;
-	gnl->nl = 1;
+	gnl->str = 1;
 	temp = ft_lstnew(gnl, sizeof(t_gnl));
 	ft_memdel((void **)&gnl);
-	ft_lstadd(lst, temp);
+	ft_lstadd(list, temp);
 	return ((t_gnl *)(temp->content));
 }
 
-void	del_gnl(t_list **lst, int fd, char **str)
+int				get_next_line(int const fd, char **line, int ret)
 {
-	t_gnl	*gnl;
-	t_list	**temp;
-	t_list	*ptr;
-
-	temp = lst;
-	while (*temp)
-	{
-		gnl = (t_gnl *)((*temp)->content);
-		if (gnl->fd == fd)
-			break ;
-		*temp = ((*temp)->next);
-	}
-	if (*temp)
-	{
-		ptr = (*temp)->next;
-		ft_strdel(&(gnl->buf));
-		ft_memdel((void **)&gnl);
-		ft_memdel((void **)temp);
-		*temp = ptr;
-	}
-	ft_strdel(str);
-}
-
-int		read_buffer(t_gnl *gnl, t_list **lst, char **temp, char **line)
-{
-	if (gnl->i == gnl->count)
-	{
-		gnl->count = read(gnl->fd, gnl->buf, BUFF_SIZE);
-		if (gnl->count == -1)
-		{
-			del_gnl(lst, gnl->fd, temp);
-			return (-1);
-		}
-		gnl->i = 0;
-		if (gnl->count == 0)
-		{
-			if (gnl->nl == 0)
-			{
-				*line = *temp;
-				return (1);
-			}
-		}
-	}
-	return (0);
-}
-
-int		get_next_line(int const fd, char **line, int ret)
-{
-	static t_list	*lst;
+	static t_list	*list;
+	char			*tmp;
 	t_gnl			*gnl;
-	char			*temp;
 
 	if (!line || BUFF_SIZE < 1 || !(*line = ft_strnew(0)) || read(fd, 0, 0))
 		return (-1);
 	ft_strdel(line);
-	gnl = get_gnl(&lst, fd);
-	temp = ft_strnew(0);
+	gnl = ft_start(&list, fd);
+	tmp = ft_strnew(0);
 	while (gnl->count > 0)
 	{
-		if ((ret = read_buffer(gnl, &lst, &temp, line)) != 0)
+		if ((ret = ft_rd_buff(gnl, &list, &tmp, line)) != 0)
 			return (ret);
 		while (gnl->i < gnl->count)
 		{
-			temp = ft_strmerge(temp, get_append(gnl));
-			if (gnl->nl)
+			tmp = ft_association(tmp, ft_connect(gnl));
+			if (gnl->str)
 			{
-				*line = temp;
+				*line = tmp;
 				return (1);
 			}
 		}
 	}
-	del_gnl(&lst, fd, &temp);
+	ft_delete(&list, fd, &tmp);
 	return (0);
 }

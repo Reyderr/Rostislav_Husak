@@ -13,14 +13,14 @@
 NAME = fdf
 
 SRC =		./src/main.c \
-			./src/read.c \
-		  	./src/map.c \
-		  	./src/window.c \
-		  	./src/draw.c \
+			./src/file_read.c \
+		  	./src/ft_get.c \
+		  	./src/create.c \
+		  	./src/processing.c \
 		  	./src/color_fun.c \
 		  	./src/keys.c \
 		  	./src/picture.c \
-		  	./src/rotate.c \
+		  	./src/mv_rotate.c \
 
 OBJ = $(SRC:.c=.o)
 
@@ -41,6 +41,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	make -C $(LIBFT_PATH)
 	$(CC) $(FLAGS) -o $(NAME) $(OBJ) -I$(INCLUDES)  $(FLAGSMLX) $(LIBFT)
+	$(EC)
 
 %.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@

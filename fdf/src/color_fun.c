@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/28 14:50:54 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/01 17:17:42 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/24 13:49:56 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		ft_change_color(t_mlx *mlx)
 
 	ft_epileptic(&color);
 	mlx->color = color;
-	ft_render(mlx);
+	ft_processing(mlx);
 	ft_helper(mlx->mlx, mlx->window);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 15:17:15 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/18 15:52:47 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/24 12:18:05 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,9 +91,8 @@ size_t			ft_countwords(char *str, char del);
 void			ft_reverse(t_list **alst);
 int				ft_delete_split(char ***split);
 size_t			ft_list_count(t_list *lst);
-int				ft_abs(int i);
 char			*ft_itoa_base(int n, int base);
-char			*ft_strmerge(char *a, char *b);
+char			*ft_association(char *a, char *b);
 int				get_next_line(int const fd, char **line, int ret);
 
 #endif
