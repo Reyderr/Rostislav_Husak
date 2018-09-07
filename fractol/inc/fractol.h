@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/21 15:08:14 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/05 11:57:16 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/07 14:20:41 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ typedef struct		s_mlx
 	double 	hgg;
 	double 	wd;
 	int		fract;
+	int		lock;
 }					t_mlx;
 
 t_pict				*ft_new_picture(t_mlx *mlx);
@@ -81,5 +82,10 @@ int					ft_error(char *str);
 void			 	ft_var(t_mlx *mlx);
 int				 	ft_mouse(int c, int x, int y, t_mlx *mlx);
 void				ft_rescale(t_mlx *mlx);
+void				ft_doub(float *real, float *imagine, float dx, float dy);
+void				ft_multi_liambda(t_mlx *mlx);
+void				ft_multi_bship(t_mlx *mlx);
+void				ft_multi_spider(t_mlx *mlx);
+void				ft_str(t_mlx *mlx);
 
 #endif

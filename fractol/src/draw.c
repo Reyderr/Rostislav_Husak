@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/22 13:02:47 by rhusak            #+#    #+#             */
-/*   Updated: 2018/08/26 17:12:21 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/07 14:00:22 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ void ft_color_set(t_mlx *mlx, int n)
 	float ind;
 
 	ind = n + 1 - (log(2) / 1) / log(2);
-	mlx->color.r = (sin(0.016 * ind + 3) * 230  - 230);
-	mlx->color.g = (sin(0.023 * ind + 5) * 230  - 230);
-	mlx->color.b = (sin(0.01 * ind + 10) * 230  - 230);
+	mlx->color.r = (sin(0.016 * ind + 4) * 230  + 25);
+	mlx->color.g = (sin(0.023 * ind + 2) * 230  + 25);
+	mlx->color.b = (sin(0.01 * ind + 1) * 230  + 25);
 }
 
 

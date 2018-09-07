@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/21 15:06:58 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/05 11:56:25 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/07 12:09:38 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,18 @@ int		ft_choose(char **av, t_mlx *mlx)
 		mlx->fract = 1;
 	else if (ft_strcmp(av[1], "Julia") == 0)
 		mlx->fract = 2;
+	else if (ft_strcmp(av[1], "Liambda") == 0)
+		mlx->fract = 3;
+	else if (ft_strcmp(av[1], "BShip") == 0)
+		mlx->fract = 4;
+	else if (ft_strcmp(av[1], "Spider") == 0)
+		mlx->fract = 5;
 	else
 	{
 		ft_helper();
 		return (0);
 	}
+	
 	return (1);
 }
 

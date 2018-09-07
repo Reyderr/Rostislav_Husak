@@ -22,7 +22,10 @@ SRC =		./src/main.c \
 		   	./src/draw.c \
 		   	./src/help.c \
 		   	./src/who.c \
-		  	./src/mouse.c
+		  	./src/mouse.c \
+		  	./src/liambda.c \
+		  	./src/burning_ship.c \
+		  	./src/spider.c \
 
 OBJ = $(SRC:.c=.o)
 
