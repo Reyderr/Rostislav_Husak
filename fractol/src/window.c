@@ -37,7 +37,7 @@ t_pict	*ft_new_picture(t_mlx *mlx)
 	return (pic);
 }
 
-t_mlx		*ft_mlxdel(t_mlx *mlx)
+t_mlx	*ft_mlxdel(t_mlx *mlx)
 {
 	if (mlx->window != NULL)
 		mlx_destroy_window(mlx->mlx, mlx->window);
@@ -47,16 +47,16 @@ t_mlx		*ft_mlxdel(t_mlx *mlx)
 	return (NULL);
 }
 
-t_mlx		*ft_start(void)
+t_mlx	*ft_start(void)
 {
 	t_mlx	*mlx;
 
-	if((mlx = ft_memalloc(sizeof(t_mlx))) == NULL)
-		return(NULL);
+	if ((mlx = ft_memalloc(sizeof(t_mlx))) == NULL)
+		return (NULL);
 	if ((mlx->mlx = mlx_init()) == NULL ||
 		(mlx->window = mlx_new_window(mlx->mlx, WIN_WD,
 			WIN_HG, "Fractol")) == NULL ||
 		(mlx->picture = ft_new_picture(mlx)) == NULL)
 		return (ft_mlxdel(mlx));
-	return(mlx);
+	return (mlx);
 }

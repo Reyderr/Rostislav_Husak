@@ -10,23 +10,25 @@
 #                                                                              #
 #******************************************************************************#
 
-AT 		= \033[37;1;41m Attantion!!! \033[0m
+AT = \033[37;1;41m Attantion!!! \033[0m
 
-NAME = Fractol
+NAME = fractol
 
 SRC =		./src/main.c \
 		  	./src/window.c \
-		  	./src/mandelbrot.c\
 		   	./src/keys.c \
-		   	./src/julia.c \
+		   	./src/keys_2.c \
 		   	./src/draw.c \
 		   	./src/help.c \
 		   	./src/who.c \
+		   	./src/who_2.c\
 		  	./src/mouse.c \
-		  	./src/liambda.c \
 		  	./src/burning_ship.c \
-		  	./src/spider.c \
-
+		  	./src/julia.c \
+		  	./src/liambda.c \
+		  	./src/mandelbrot.c\
+		  	./src/spider.c 
+		  	
 OBJ = $(SRC:.c=.o)
 
 FLAGS = -Wall -Wextra -Werror

@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/26 12:30:19 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/07 12:09:29 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/07 17:18:34 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,10 @@ void	ft_str(t_mlx *mlx)
 	mlx_string_put(mlx->mlx, mlx->window, 10, 10, 0xFFFFFF, str);
 	ft_strdel(&str);
 	ft_strdel(&iter);
-
 }
 
-void	ft_helper()
+void	ft_helper(void)
 {
-	ft_putendl("Please choose fractal:\n1)Mandelbrot\n2)Julia\n3)Liambda\n");
-
+	ft_putendl("Please choose fractal:\n1)mandelbrot\n2)julia\n3)bship\
+		\n4)liambda\n5)spider");
 }
