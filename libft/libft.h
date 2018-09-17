@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rhusak <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 15:17:15 by rhusak            #+#    #+#             */
-/*   Updated: 2017/12/24 18:15:32 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/08/21 13:58:04 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,8 @@ char			*ft_strmap(char const *s, char (*f)(char));
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char			*ft_strncat(char *s1, const char *s2, size_t n);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
+int				ft_scheck(int first, int second, double p);
+double			ft_check(double val, double first, double second);
 char			*ft_strncpy(char *dst, const char *src, size_t len);
 int				ft_strnequ(char const *s1, char const *s2, size_t n);
 char			*ft_strnstr(const char *haystack,
@@ -85,5 +87,13 @@ t_list			*ft_lstnew(void const *content, size_t content_size);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+size_t			ft_countwords(char *str, char del);
+void			ft_reverse(t_list **alst);
+int				ft_delete_split(char ***split);
+size_t			ft_list_count(t_list *lst);
+int				ft_abs(int i);
+char			*ft_itoa_base(int n, int base);
+char			*ft_association(char *a, char *b);
+int				get_next_line(int const fd, char **line, int ret);
 
 #endif
