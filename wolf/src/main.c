@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/17 12:15:15 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/21 11:34:28 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/21 11:51:29 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void		ft_begin(t_mlx *mlx)
 } 
 
 
-ft_texture(t_mlx *mlx)
+/*void		ft_texture(t_mlx *mlx)
 {
 	int	y;
 	int	x;
@@ -59,7 +59,7 @@ ft_texture(t_mlx *mlx)
 
 
 
-}
+}*/
 
 int		main(int ac, char **av)
 {
@@ -78,7 +78,7 @@ int		main(int ac, char **av)
 		return (ft_strcol("File read error\n",  BLUE));
 	mlx->map = map;
 	mlx->lock = 0;
-	ft_texture(mlx);
+	//ft_texture(mlx);
 	ft_begin(mlx);
 	ft_calc(mlx);
 	mlx_hook(mlx->window, 2, 3, ft_button_pressig, mlx);
