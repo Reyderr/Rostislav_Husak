@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/17 14:02:16 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/21 11:29:01 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/21 17:43:58 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # define WIN_WD 1024
 # define WIN_HG 800
+# define T_W 64
+# define T_H 64
 # define END "\033[0m"
 # define RED "\033[31m"
 # define WHITE "\033[0;37m"
@@ -62,6 +64,7 @@ typedef struct		s_mlx
 	t_pict		*picture;
 	t_map		*map;
 	t_color	color;
+	t_pict		texture[20];
 	void		*window;
 	void		*mlx;
 	double	d_x;
@@ -78,6 +81,7 @@ typedef struct		s_mlx
 	double	d_dt_x;
 	double	d_dt_y;
 	double	mv_wall;
+	double	x_w;
 	int		iter_x;
 	int		iter_y;
 	int		touch;
@@ -88,20 +92,23 @@ typedef struct		s_mlx
 	int		maus_x;
 	int		oldm;
 	int		lock;
-	int		*texture;
+	int		num;
+	int		t_x;
+	int		t_y;
 }			t_mlx;
 
 
 t_mlx		*ft_starting(void);
-void		ft_draw(t_mlx *mlx, int x);
+t_pict		*ft_del_picture(t_mlx *mlx, t_pict *pic);
 t_map		*ft_read_file(char *file);
 void		ft_wolf(t_mlx *mlx);
-int		ft_exit(int key, t_mlx *mlx);
-int		ft_exit_x(void *par);
-int		ft_button_pressig(int key, t_mlx *mlx);
+void		ft_draw(t_mlx *mlx, int x);
 void		ft_calc(t_mlx *mlx);
 void		ft_color_set(t_mlx *mlx, int r, int g, int b);
 void		ft_move_arrow(int key, t_mlx *mlx);
+int		ft_exit(int key, t_mlx *mlx);
+int		ft_exit_x(void *par);
+int		ft_button_pressig(int key, t_mlx *mlx);
 int		ft_maus(int x, int y, t_mlx *mlx);
 
 #endif

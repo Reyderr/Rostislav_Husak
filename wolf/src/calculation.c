@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/21 11:23:53 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/21 11:25:37 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/21 17:43:52 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,24 @@ void		ft_wall(t_mlx *mlx)
 			mlx->mv_wall = (mlx->map->hg - mlx->map->p_y + (1 - mlx->iter_y) / 2)  / mlx->rd_y;
 }
 
+// //
+// /////////////////////////////////////////////////////////
+void	ft_t(t_mlx *mlx)
+{
+	int y;
+	int d;
+	y = mlx->s_rend;
+	while(y < mlx->e_rend)
+	{
+		d  = y * 256 - WIN_HG * 128 + mlx->line_hg * 128;
+		mlx->t_y = ((d * T_H) / mlx->line_hg) / 256;
+
+		y++;
+	}
+
+}
+// /////////////////////////////////////////////////////////
+// //
 void		ft_calc(t_mlx *mlx)
 {
 	int x;
@@ -96,6 +114,23 @@ void		ft_calc(t_mlx *mlx)
 		mlx->e_rend = mlx->line_hg / 2 + WIN_HG / 2;
 		if(mlx->e_rend >= WIN_HG)
 			mlx->e_rend = WIN_HG - 1;
+
+		mlx->num = mlx->map->sq[mlx->map->wd][mlx->map->hg] - 1;
+		if (mlx->wall == 0)
+			mlx->x_w = mlx->map->p_y + mlx->mv_wall * mlx->rd_y;
+		else
+			mlx->x_w = mlx->map->p_x + mlx->mv_wall * mlx->rd_x;
+		// //
+		// /////////////////////////////////////////////////////////
+		mlx->x_w -= floor((mlx->x_w));
+		mlx->t_x = (int)(mlx->x_w * (double)(T_W));
+		// if (mlx->wall == 0 && mlx->rd_x > 0)
+		// 	mlx->t_x = T_W - mlx->t_x - 1;
+		// if (mlx->wall == 1 && mlx->rd_x < 0)
+		// 	mlx->t_x = T_W - mlx->t_x - 1;
+		ft_t(mlx);
+		// /////////////////////////////////////////////////////////
+		// //
 		if (mlx->map->sq[mlx->map->wd][mlx->map->hg] == 1)
 			ft_color_set(mlx, 191, 244, 66);
 		else

@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/17 12:15:15 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/21 11:51:29 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/21 17:42:17 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,29 +37,39 @@ void		ft_begin(t_mlx *mlx)
 	mlx->pl_y = 0.66;  
 } 
 
-
-/*void		ft_texture(t_mlx *mlx)
+void		ft_convert(t_mlx *mlx, char *name, int i)
 {
-	int	y;
-	int	x;
-	int	gradi;
+	int 		a;
+	int		b;
 
-	x = 0;
-	while(x < 64)
+	a = 64;
+	b = 64;
+	if ((mlx->texture[i].picture = mlx_xpm_file_to_image(mlx->mlx, name, &a, &b)) == NULL)
+		ft_del_picture(mlx, &mlx->texture[i]);
+	mlx->texture[i].addr = mlx_get_data_addr(mlx->texture[i].picture, &mlx->texture[i].bits_per_pixel, &mlx->texture[i].sz_line, &mlx->texture[i].endian);
+	mlx->texture[i].bits_per_pixel /= 8;
+}
+
+int		ft_texture(t_mlx *mlx)
+{
+	int		i;
+	// char		*texture[20] = {"brick.xpm", "wood.xpm", "metal.xpm",
+	// 	"stone.xpm", "grass.xpm", NULL};
+	//char		*type_tex;
+
+	i = 0;
+
+	while(i < 20 /*&& texture[i]*/)
 	{
-		y = 0;
-		while(y < 64)
-		{
-			gradi = (x * 256 / 64) * (y * 256 / 64);
-			mlx->texture[64 * y + x] =  gradi + 256 * gradi + 65536 * gradi;
-			y++;
-		}
-		x++;
+	//	type_tex = ft_strjoin("texture/", texture[i]);
+		ft_convert(mlx, "texture/gg.xpm"/*type_tex*/, i);
+		//ft_strdel(&type_tex);
+		i++;
+					write(1, "s", 1);
 	}
-
-
-
-}*/
+	// mlx->texture[0] = NULL;
+	return (0);
+}
 
 int		main(int ac, char **av)
 {
@@ -78,7 +88,7 @@ int		main(int ac, char **av)
 		return (ft_strcol("File read error\n",  BLUE));
 	mlx->map = map;
 	mlx->lock = 0;
-	//ft_texture(mlx);
+	ft_texture(mlx);
 	ft_begin(mlx);
 	ft_calc(mlx);
 	mlx_hook(mlx->window, 2, 3, ft_button_pressig, mlx);
