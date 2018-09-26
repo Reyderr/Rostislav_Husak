@@ -20,11 +20,7 @@ SRC =		./src/main.c \
 		./src/keys.c \
 		./src/reading.c\
 		./src/calculation.c\
-		
-		#./src/wolf.c\
-
-		
-		  	
+		./src/command.c		  	
 		  	
 OBJ = $(SRC:.c=.o)
 

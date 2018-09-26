@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/18 13:17:25 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/21 12:06:42 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/24 11:37:54 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int		ft_exit_x(void *par)
 
 void	ft_move_rl(int key, t_mlx *mlx)
 {
-	if (key == 123)
+	if (key == 123 || key == 0)
 	{
 		mlx->od_x = mlx->d_x;
 		mlx->d_x = mlx->d_x * cos(0.06) - mlx->d_y * sin(0.06);
@@ -46,7 +46,7 @@ void	ft_move_rl(int key, t_mlx *mlx)
 		 mlx->pl_x = mlx->pl_x * cos(0.06) - mlx->pl_y * sin(0.06);
 		 mlx->pl_y = mlx->o_pl_x * sin(0.06) + mlx->pl_y * cos(0.06);
 	}
-	if (key == 124)
+	if (key == 124 || key == 2)
 	{
 		mlx->od_x = mlx->d_x;
 		mlx->d_x = mlx->d_x * cos(-0.06) - mlx->d_y * sin(-0.06);
@@ -59,18 +59,18 @@ void	ft_move_rl(int key, t_mlx *mlx)
 
 void	ft_move_db(int key, t_mlx *mlx)
 {
-	if (key == 126)
+	if (key == 126 || key == 13)
 	{
-		if (!mlx->map->sq[(int)(mlx->map->p_x + mlx->d_x * 1)][(int)(mlx->map->p_y)] )
+		if (!mlx->map->sq[(int)(mlx->map->p_x + mlx->d_x * 1)][(int)(mlx->map->p_y)]  || mlx->map->sq[(int)(mlx->map->p_x + mlx->d_x * 1)][(int)(mlx->map->p_y)] == 7)
 			mlx->map->p_x += mlx->d_x * 0.3;
-		if (!mlx->map->sq[(int)(mlx->map->p_x )][(int)(mlx->map->p_y + mlx->d_y * 1)] )
+		if (!mlx->map->sq[(int)(mlx->map->p_x )][(int)(mlx->map->p_y + mlx->d_y * 1)] || mlx->map->sq[(int)(mlx->map->p_x )][(int)(mlx->map->p_y + mlx->d_y * 1)] == 7 )
 			mlx->map->p_y += mlx->d_y * 0.3;
 	}
-	if (key == 125)
+	if (key == 125 || key == 1)
 	{
-		if (!mlx->map->sq[(int)(mlx->map->p_x - mlx->d_x * 1)][(int)(mlx->map->p_y)] )
+		if (!mlx->map->sq[(int)(mlx->map->p_x - mlx->d_x * 1)][(int)(mlx->map->p_y)]  || mlx->map->sq[(int)(mlx->map->p_x - mlx->d_x * 1)][(int)(mlx->map->p_y)] == 7)
 			mlx->map->p_x -= mlx->d_x * 0.3;
-		if (!mlx->map->sq[(int)(mlx->map->p_x )][(int)(mlx->map->p_y - mlx->d_y * 1)] )
+		if (!mlx->map->sq[(int)(mlx->map->p_x )][(int)(mlx->map->p_y - mlx->d_y * 1)]  || mlx->map->sq[(int)(mlx->map->p_x )][(int)(mlx->map->p_y - mlx->d_y * 1)] == 7)
 			mlx->map->p_y -= mlx->d_y * 0.3;
 	}
 	
@@ -107,9 +107,9 @@ return (0);
 
 int	ft_button_pressig(int key, t_mlx *mlx)
 {
-	if (key == 126 || key == 125 )
+	if (key == 126 || key == 125 ||  key == 1 || key == 13)
 		ft_move_db(key, mlx);
-	if (key == 123 || key ==124)
+	if (key == 123 || key ==124 || key == 2 || key == 0)
 		ft_move_rl(key, mlx);
 	if (key == 37 )
 		ft_lock(mlx);

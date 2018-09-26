@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/17 14:02:16 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/21 17:43:58 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/23 16:02:18 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,9 +59,24 @@ typedef struct		s_pict
 	int		endian;
 }					t_pict;
 
+typedef struct			s_bottom
+{
+	double	b_x;
+	double	b_y;
+	double	way;
+	double	w_w;
+	double	p_way;
+	double	wt;
+	double	c_bot_x;
+	double	c_bot_y;
+	int		bot_tex_x;
+	int		bot_tex_y;
+}					t_bottom;
+
 typedef struct		s_mlx
 {
 	t_pict		*picture;
+	t_bottom	bot;
 	t_map		*map;
 	t_color	color;
 	t_pict		texture[20];
@@ -104,11 +119,13 @@ t_map		*ft_read_file(char *file);
 void		ft_wolf(t_mlx *mlx);
 void		ft_draw(t_mlx *mlx, int x);
 void		ft_calc(t_mlx *mlx);
-void		ft_color_set(t_mlx *mlx, int r, int g, int b);
+void		ft_command(void);
 void		ft_move_arrow(int key, t_mlx *mlx);
 int		ft_exit(int key, t_mlx *mlx);
 int		ft_exit_x(void *par);
 int		ft_button_pressig(int key, t_mlx *mlx);
 int		ft_maus(int x, int y, t_mlx *mlx);
+int		ft_strcol(char *str, char *color);
+
 
 #endif

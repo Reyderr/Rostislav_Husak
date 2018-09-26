@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/17 17:00:42 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/21 14:12:06 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/23 13:08:58 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,14 @@
 
 int	ft_man(t_map *m, char **split, int x, int y)
 {
-	if ((m->sq[y][x] = ft_atoi(split[x])) == 5)
+	m->sq[y][x] = ft_atoi(split[x]);
+	if (ft_strchr(split[x], 's') )
 	{
-		m->p_y = y;
-		m->p_x = x;
+		m->p_x = y;
+		m->p_y = x;
 	}
 	if ((m->sq[y][x] = ft_atoi(split[x])) < 0)
-				return (0);
+		return (0);
 	return(1);
 }
 

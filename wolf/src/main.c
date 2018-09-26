@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/17 12:15:15 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/21 17:42:17 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/24 15:33:51 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,23 +18,12 @@ int		ft_error(char *str)
 	return (1);
 }
 
-int		ft_strcol(char *str, char *color)
-{
-	if (color)
-	{
-		write(1, color, ft_strlen(color));
-		write(1, str, ft_strlen(str));
-		write(1, END, ft_strlen(END));
-	}
-	return(1);
-}
-
 void		ft_begin(t_mlx *mlx)
 {
 	mlx->d_x = -1;
 	mlx->d_y = 0;
 	mlx->pl_x = 0;
-	mlx->pl_y = 0.66;  
+	mlx->pl_y = 0.7;  
 } 
 
 void		ft_convert(t_mlx *mlx, char *name, int i)
@@ -53,21 +42,18 @@ void		ft_convert(t_mlx *mlx, char *name, int i)
 int		ft_texture(t_mlx *mlx)
 {
 	int		i;
-	// char		*texture[20] = {"brick.xpm", "wood.xpm", "metal.xpm",
-	// 	"stone.xpm", "grass.xpm", NULL};
-	//char		*type_tex;
+	char		*texture[20] = {"r_brick.xpm", "wood.xpm", "eagle.xpm",
+		"b_stone.xpm", "c_stone.xpm", "girl.xpm", "portal.xpm",  NULL};
+	char		*type_tex;
 
 	i = 0;
-
-	while(i < 20 /*&& texture[i]*/)
+	while(i < 20 && texture[i])
 	{
-	//	type_tex = ft_strjoin("texture/", texture[i]);
-		ft_convert(mlx, "texture/gg.xpm"/*type_tex*/, i);
-		//ft_strdel(&type_tex);
+		type_tex = ft_strjoin("texture/pics/", texture[i]);
+		ft_convert(mlx, type_tex, i);
+		ft_strdel(&type_tex);
 		i++;
-					write(1, "s", 1);
 	}
-	// mlx->texture[0] = NULL;
 	return (0);
 }
 
@@ -88,6 +74,7 @@ int		main(int ac, char **av)
 		return (ft_strcol("File read error\n",  BLUE));
 	mlx->map = map;
 	mlx->lock = 0;
+	ft_command();
 	ft_texture(mlx);
 	ft_begin(mlx);
 	ft_calc(mlx);
