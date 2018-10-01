@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 15:17:15 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/18 17:09:22 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/10/01 15:35:59 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ t_list			*ft_lstnew(void const *content, size_t content_size);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-int			ft_countwords(char *str, char del);
+int				ft_countwords(char *str, char del);
 void			ft_reverse(t_list **alst);
 int				ft_delete_split(char ***split);
 size_t			ft_list_count(t_list *lst);

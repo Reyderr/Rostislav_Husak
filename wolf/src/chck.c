@@ -1,33 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_countwords.c                                    :+:      :+:    :+:   */
+/*   chck.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/20 16:28:12 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/30 14:13:18 by rhusak           ###   ########.fr       */
+/*   Created: 2018/09/30 17:30:22 by rhusak            #+#    #+#             */
+/*   Updated: 2018/09/30 17:40:07 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../inc/wolf.h"
 
-int	ft_countwords(char *str, char del)
+void		ft_n_text(t_mlx *mlx)
 {
-	size_t result;
-	size_t i;
+	if (mlx->n_text != 1)
+		mlx->n_text = 1;
+	else
+		mlx->n_text = 0;
+}
 
-	i = 0;
-	result = 0;
-	while ((str[i] && str[i] == del) || (str[i] && str[i] == '\t'))
-		i++;
-	while (str[i])
-	{
-		while (str[i] && str[i] != del)
-			i++;
-		result++;
-		while (str[i] && str[i] == del)
-			i++;
-	}
-	return (result);
+void		ft_f_text(t_mlx *mlx)
+{
+	if (mlx->f_side != 1)
+		mlx->f_side = 1;
+	else
+		mlx->f_side = 0;
+}
+
+void		ft_i(t_mlx *mlx)
+{
+	if (mlx->i_key != 1)
+		mlx->i_key = 1;
+	else
+		mlx->i_key = 0;
 }

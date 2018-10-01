@@ -6,7 +6,7 @@
 /*   By: rhusak <rhusak@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/17 13:21:15 by rhusak            #+#    #+#             */
-/*   Updated: 2018/09/23 10:56:05 by rhusak           ###   ########.fr       */
+/*   Updated: 2018/09/30 18:17:51 by rhusak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,10 @@ t_pict	*ft_del_picture(t_mlx *mlx, t_pict *pic)
 	if (pic != NULL)
 	{
 		if (pic->picture != NULL)
+		{
 			mlx_destroy_image(mlx->mlx, pic->picture);
-		ft_memdel((void **)&pic);
-		
+			ft_memdel((void **)&pic);
+		}
 	}
 	return (NULL);
 }

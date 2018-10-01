@@ -34,10 +34,10 @@ $(NAME): $(OBJ)
 
 clean:
 	@rm -rf $(OBJ)
-	@echo "$(AT) CLEAN  libft   : OK"
+	@echo "$(AT) CLEAN LIBFT    : OK"
 
 fclean: 
 	@rm -rf $(NAME)
-	@echo "$(AT) FCLEAN libft   : OK"
+	@echo "$(AT) FCLEAN LIBFT   : OK"
 
 re: fclean all

@@ -19,8 +19,15 @@ SRC =		./src/main.c \
 		./src/draw.c \
 		./src/keys.c \
 		./src/reading.c\
+		./src/read.c \
 		./src/calculation.c\
-		./src/command.c		  	
+		./src/command.c \
+		./src/texture.c \
+		./src/wall.c \
+		./src/draw_calc.c \
+		./src/key_move.c \
+		./src/chck.c \
+		./src/r_texture.c \
 		  	
 OBJ = $(SRC:.c=.o)
 
