@@ -26,11 +26,11 @@ OBJ = $(SRC:.c=.o)
 
 FLAGS = -Wall -Wextra -Werror
 
-FLAGSMLX = -L/usr/local/include -lmlx -framework OpenGL -framework AppKit
+FLAGSMLX = -L./minilibx -lmlx -framework OpenGL -framework AppKit
 
 LIBFT = -L./libft -lft
 
-CC = gcc
+CC = gcc			
 
 INCLUDES = ./inc
 
@@ -40,7 +40,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	make -C $(LIBFT_PATH)
-	$(CC) $(FLAGS) -o $(NAME) $(OBJ) -I$(INCLUDES)  $(FLAGSMLX) $(LIBFT)
+	$(CC) $(FLAGS) -o $(NAME) $(OBJ) -I$(INCLUDES)   $(FLAGSMLX) $(LIBFT)
 	$(EC)
 
 %.o: %.c

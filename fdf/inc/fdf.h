@@ -16,7 +16,7 @@
 # define WIN_HG	768
 # include "../libft/libft.h"
 # include "../libft/get_next_line.h"
-# include <mlx.h>
+# include "../minilibx/mlx.h"	
 # include <fcntl.h>
 # include <stdlib.h>
 # include <limits.h>

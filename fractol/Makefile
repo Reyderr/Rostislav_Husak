@@ -33,7 +33,7 @@ OBJ = $(SRC:.c=.o)
 
 FLAGS = -Wall -Wextra -Werror
 
-FLAGSMLX = -L/usr/local/include -lmlx -framework OpenGL -framework AppKit
+FLAGSMLX = -L./minilibx -lmlx -framework OpenGL -framework AppKit
 
 LIBFT = -L./libft -lft
 

@@ -26,7 +26,7 @@
 # define LIGT_BLUE "\033[0;36m"
 # define AQUAMARINE "\033[36m"
 # include "../libft/libft.h"
-# include <mlx.h>
+# include "../minilibx/mlx.h
 # include <math.h>
 # include <pthread.h>
 # include <fcntl.h>
