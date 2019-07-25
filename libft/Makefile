@@ -36,7 +36,7 @@ clean:
 	@rm -rf $(OBJ)
 	@echo "$(AT) CLEAN LIBFT    : OK"
 
-fclean: 
+fclean: clean
 	@rm -rf $(NAME)
 	@echo "$(AT) FCLEAN LIBFT   : OK"
 
