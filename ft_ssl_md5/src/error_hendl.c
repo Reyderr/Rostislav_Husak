@@ -27,7 +27,7 @@ void		ft_erro_comand(char *str)
 	ft_putendl("'.\n");
 	ft_putendl("Standart commands:\n\nMessage Digest commands:\nmd5\nsha256");
 	ft_putendl("sha384\nsha512\n");
-	ft_putendl("Chipher commands:");
+	ft_putendl("Cipher commands:");
 	exit(1);
 }
 
