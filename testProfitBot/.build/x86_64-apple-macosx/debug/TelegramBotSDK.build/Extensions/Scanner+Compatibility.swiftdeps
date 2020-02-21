@@ -1,0 +1,259 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So9NSScannerC", ""]
+- ["So9NSScannerC", "scanInt"]
+- ["So9NSScannerC", "scanInt32"]
+- ["So9NSScannerC", "scanInt64"]
+- ["So9NSScannerC", "scanUInt64"]
+- ["So9NSScannerC", "scanFloat"]
+- ["So9NSScannerC", "scanDouble"]
+- ["So9NSScannerC", "scanHexUInt32"]
+- ["So9NSScannerC", "scanHexUInt64"]
+- ["So9NSScannerC", "scanHexFloat"]
+- ["So9NSScannerC", "scanHexDouble"]
+- ["So9NSScannerC", "scanString"]
+- ["So9NSScannerC", "scanCharacters"]
+- ["So9NSScannerC", "scanUpTo"]
+- ["So9NSScannerC", "scanUpToCharacters"]
+provides-dynamic-lookup:
+depends-top-level:
+- "CastingPrecedence"
+- "CharacterSet"
+- "Double"
+- "Float"
+- !private "FloatLiteralType"
+- "Int"
+- "Int32"
+- "Int64"
+- !private "IntegerLiteralType"
+- !private "NSString"
+- "Scanner"
+- "String"
+- "TernaryPrecedence"
+- "UInt32"
+- "UInt64"
+depends-member:
+- !private ["s7CVarArgP", "scanCharacters"]
+- !private ["s7CVarArgP", "scanDouble"]
+- !private ["s7CVarArgP", "scanFloat"]
+- !private ["s7CVarArgP", "scanHexDouble"]
+- !private ["s7CVarArgP", "scanHexFloat"]
+- !private ["s7CVarArgP", "scanHexInt32"]
+- !private ["s7CVarArgP", "scanHexInt64"]
+- !private ["s7CVarArgP", "scanInt"]
+- !private ["s7CVarArgP", "scanInt32"]
+- !private ["s7CVarArgP", "scanInt64"]
+- !private ["s7CVarArgP", "scanString"]
+- !private ["s7CVarArgP", "scanUnsignedLongLong"]
+- !private ["s7CVarArgP", "scanUpTo"]
+- !private ["s7CVarArgP", "scanUpToCharacters"]
+- !private ["s28CustomDebugStringConvertibleP", "scanCharacters"]
+- !private ["s28CustomDebugStringConvertibleP", "scanDouble"]
+- !private ["s28CustomDebugStringConvertibleP", "scanFloat"]
+- !private ["s28CustomDebugStringConvertibleP", "scanHexDouble"]
+- !private ["s28CustomDebugStringConvertibleP", "scanHexFloat"]
+- !private ["s28CustomDebugStringConvertibleP", "scanHexInt32"]
+- !private ["s28CustomDebugStringConvertibleP", "scanHexInt64"]
+- !private ["s28CustomDebugStringConvertibleP", "scanInt"]
+- !private ["s28CustomDebugStringConvertibleP", "scanInt32"]
+- !private ["s28CustomDebugStringConvertibleP", "scanInt64"]
+- !private ["s28CustomDebugStringConvertibleP", "scanString"]
+- !private ["s28CustomDebugStringConvertibleP", "scanUnsignedLongLong"]
+- !private ["s28CustomDebugStringConvertibleP", "scanUpTo"]
+- !private ["s28CustomDebugStringConvertibleP", "scanUpToCharacters"]
+- !private ["s23CustomStringConvertibleP", "scanCharacters"]
+- !private ["s23CustomStringConvertibleP", "scanDouble"]
+- !private ["s23CustomStringConvertibleP", "scanFloat"]
+- !private ["s23CustomStringConvertibleP", "scanHexDouble"]
+- !private ["s23CustomStringConvertibleP", "scanHexFloat"]
+- !private ["s23CustomStringConvertibleP", "scanHexInt32"]
+- !private ["s23CustomStringConvertibleP", "scanHexInt64"]
+- !private ["s23CustomStringConvertibleP", "scanInt"]
+- !private ["s23CustomStringConvertibleP", "scanInt32"]
+- !private ["s23CustomStringConvertibleP", "scanInt64"]
+- !private ["s23CustomStringConvertibleP", "scanString"]
+- !private ["s23CustomStringConvertibleP", "scanUnsignedLongLong"]
+- !private ["s23CustomStringConvertibleP", "scanUpTo"]
+- !private ["s23CustomStringConvertibleP", "scanUpToCharacters"]
+- !private ["SQ", "scanCharacters"]
+- !private ["SQ", "scanDouble"]
+- !private ["SQ", "scanFloat"]
+- !private ["SQ", "scanHexDouble"]
+- !private ["SQ", "scanHexFloat"]
+- !private ["SQ", "scanHexInt32"]
+- !private ["SQ", "scanHexInt64"]
+- !private ["SQ", "scanInt"]
+- !private ["SQ", "scanInt32"]
+- !private ["SQ", "scanInt64"]
+- !private ["SQ", "scanString"]
+- !private ["SQ", "scanUnsignedLongLong"]
+- !private ["SQ", "scanUpTo"]
+- !private ["SQ", "scanUpToCharacters"]
+- !private ["SH", "scanCharacters"]
+- !private ["SH", "scanDouble"]
+- !private ["SH", "scanFloat"]
+- !private ["SH", "scanHexDouble"]
+- !private ["SH", "scanHexFloat"]
+- !private ["SH", "scanHexInt32"]
+- !private ["SH", "scanHexInt64"]
+- !private ["SH", "scanInt"]
+- !private ["SH", "scanInt32"]
+- !private ["SH", "scanInt64"]
+- !private ["SH", "scanString"]
+- !private ["SH", "scanUnsignedLongLong"]
+- !private ["SH", "scanUpTo"]
+- !private ["SH", "scanUpToCharacters"]
+- !private ["So9NSCopyingP", "scanCharacters"]
+- !private ["So9NSCopyingP", "scanDouble"]
+- !private ["So9NSCopyingP", "scanFloat"]
+- !private ["So9NSCopyingP", "scanHexDouble"]
+- !private ["So9NSCopyingP", "scanHexFloat"]
+- !private ["So9NSCopyingP", "scanHexInt32"]
+- !private ["So9NSCopyingP", "scanHexInt64"]
+- !private ["So9NSCopyingP", "scanInt"]
+- !private ["So9NSCopyingP", "scanInt32"]
+- !private ["So9NSCopyingP", "scanInt64"]
+- !private ["So9NSCopyingP", "scanString"]
+- !private ["So9NSCopyingP", "scanUnsignedLongLong"]
+- !private ["So9NSCopyingP", "scanUpTo"]
+- !private ["So9NSCopyingP", "scanUpToCharacters"]
+- ["So8NSObjectC", "CharacterSet"]
+- ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "Float"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "Int32"]
+- ["So8NSObjectC", "Int64"]
+- !private ["So8NSObjectC", "NSString"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UInt32"]
+- ["So8NSObjectC", "UInt64"]
+- ["So8NSObjectC", "scanCharacters"]
+- ["So8NSObjectC", "scanDouble"]
+- ["So8NSObjectC", "scanFloat"]
+- ["So8NSObjectC", "scanHexDouble"]
+- ["So8NSObjectC", "scanHexFloat"]
+- !private ["So8NSObjectC", "scanHexInt32"]
+- !private ["So8NSObjectC", "scanHexInt64"]
+- ["So8NSObjectC", "scanHexUInt32"]
+- ["So8NSObjectC", "scanHexUInt64"]
+- ["So8NSObjectC", "scanInt"]
+- ["So8NSObjectC", "scanInt32"]
+- ["So8NSObjectC", "scanInt64"]
+- ["So8NSObjectC", "scanString"]
+- ["So8NSObjectC", "scanUInt64"]
+- !private ["So8NSObjectC", "scanUnsignedLongLong"]
+- ["So8NSObjectC", "scanUpTo"]
+- ["So8NSObjectC", "scanUpToCharacters"]
+- !private ["So8NSObjectP", "scanCharacters"]
+- !private ["So8NSObjectP", "scanDouble"]
+- !private ["So8NSObjectP", "scanFloat"]
+- !private ["So8NSObjectP", "scanHexDouble"]
+- !private ["So8NSObjectP", "scanHexFloat"]
+- !private ["So8NSObjectP", "scanHexInt32"]
+- !private ["So8NSObjectP", "scanHexInt64"]
+- !private ["So8NSObjectP", "scanInt"]
+- !private ["So8NSObjectP", "scanInt32"]
+- !private ["So8NSObjectP", "scanInt64"]
+- !private ["So8NSObjectP", "scanString"]
+- !private ["So8NSObjectP", "scanUnsignedLongLong"]
+- !private ["So8NSObjectP", "scanUpTo"]
+- !private ["So8NSObjectP", "scanUpToCharacters"]
+- ["So9NSScannerC", "CharacterSet"]
+- ["So9NSScannerC", "Double"]
+- ["So9NSScannerC", "Float"]
+- ["So9NSScannerC", "Int"]
+- ["So9NSScannerC", "Int32"]
+- ["So9NSScannerC", "Int64"]
+- !private ["So9NSScannerC", "NSString"]
+- ["So9NSScannerC", "String"]
+- ["So9NSScannerC", "UInt32"]
+- ["So9NSScannerC", "UInt64"]
+- ["So9NSScannerC", "scanCharacters"]
+- ["So9NSScannerC", "scanDouble"]
+- ["So9NSScannerC", "scanFloat"]
+- ["So9NSScannerC", "scanHexDouble"]
+- ["So9NSScannerC", "scanHexFloat"]
+- !private ["So9NSScannerC", "scanHexInt32"]
+- !private ["So9NSScannerC", "scanHexInt64"]
+- ["So9NSScannerC", "scanHexUInt32"]
+- ["So9NSScannerC", "scanHexUInt64"]
+- ["So9NSScannerC", "scanInt"]
+- ["So9NSScannerC", "scanInt32"]
+- ["So9NSScannerC", "scanInt64"]
+- ["So9NSScannerC", "scanString"]
+- ["So9NSScannerC", "scanUInt64"]
+- !private ["So9NSScannerC", "scanUnsignedLongLong"]
+- ["So9NSScannerC", "scanUpTo"]
+- ["So9NSScannerC", "scanUpToCharacters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanCharacters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanDouble"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanFloat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanHexDouble"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanHexFloat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanHexInt32"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanHexInt64"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanInt"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanInt32"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanInt64"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanUnsignedLongLong"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanUpTo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanUpToCharacters"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanCharacters"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanDouble"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanFloat"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanHexDouble"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanHexFloat"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanHexInt32"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanHexInt64"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanInt"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanInt32"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanInt64"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanString"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanUnsignedLongLong"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanUpTo"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanUpToCharacters"]
+depends-nominal:
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "SQ"
+- !private "SH"
+- !private "So9NSCopyingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- "So9NSScannerC"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/testProfitBot/testProfitBot/.build/checkouts/telegram-bot-swift/Sources/CCurl/include/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "cf366353eadd840f3711fbbf1d63a7d5"

@@ -1,0 +1,305 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["14TelegramBotSDK4JSONV", ""]
+- ["14TelegramBotSDK4JSONV", "isNullOrUnknown"]
+- ["14TelegramBotSDK4JSONV", "prettyPrint"]
+- ["14TelegramBotSDK4JSONV", "initFrom"]
+- ["14TelegramBotSDK4JSONV", "customArrayValue"]
+- ["14TelegramBotSDK4JSONV", "twoDArrayValue"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- "Bool"
+- "InternalJsonConvertible"
+- "JSON"
+- !private "print"
+- !private "||"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "init"]
+- !private ["Sa", "reserveCapacity"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- !private ["SK", "init"]
+- !private ["SK", "reserveCapacity"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "reserveCapacity"]
+- !private ["Sl", "JSON"]
+- !private ["Sl", "append"]
+- !private ["Sl", "arrayValue"]
+- !private ["Sl", "count"]
+- !private ["Sl", "debugDescription"]
+- !private ["Sl", "init"]
+- !private ["Sl", "print"]
+- !private ["Sl", "reserveCapacity"]
+- !private ["Sl", "type"]
+- !private ["SL", "JSON"]
+- !private ["SL", "arrayValue"]
+- !private ["SL", "count"]
+- !private ["SL", "debugDescription"]
+- !private ["SL", "init"]
+- !private ["SL", "print"]
+- !private ["SL", "type"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "reserveCapacity"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "reserveCapacity"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "reserveCapacity"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "reserveCapacity"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "reserveCapacity"]
+- !private ["Se", "append"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
+- !private ["Se", "reserveCapacity"]
+- !private ["SE", "append"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SE", "reserveCapacity"]
+- !private ["SQ", "JSON"]
+- !private ["SQ", "append"]
+- !private ["SQ", "arrayValue"]
+- !private ["SQ", "count"]
+- !private ["SQ", "debugDescription"]
+- !private ["SQ", "init"]
+- !private ["SQ", "null"]
+- !private ["SQ", "print"]
+- !private ["SQ", "reserveCapacity"]
+- !private ["SQ", "type"]
+- !private ["SQ", "unknown"]
+- !private ["s25ExpressibleByArrayLiteralP", "JSON"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "arrayValue"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "debugDescription"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "print"]
+- !private ["s25ExpressibleByArrayLiteralP", "reserveCapacity"]
+- !private ["s25ExpressibleByArrayLiteralP", "type"]
+- !private ["s27ExpressibleByBooleanLiteralP", "JSON"]
+- !private ["s27ExpressibleByBooleanLiteralP", "arrayValue"]
+- !private ["s27ExpressibleByBooleanLiteralP", "count"]
+- !private ["s27ExpressibleByBooleanLiteralP", "debugDescription"]
+- !private ["s27ExpressibleByBooleanLiteralP", "init"]
+- !private ["s27ExpressibleByBooleanLiteralP", "print"]
+- !private ["s27ExpressibleByBooleanLiteralP", "type"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "JSON"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "arrayValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "count"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "debugDescription"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "print"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "type"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "JSON"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "arrayValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "count"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "debugDescription"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "print"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "type"]
+- !private ["s25ExpressibleByFloatLiteralP", "JSON"]
+- !private ["s25ExpressibleByFloatLiteralP", "arrayValue"]
+- !private ["s25ExpressibleByFloatLiteralP", "count"]
+- !private ["s25ExpressibleByFloatLiteralP", "debugDescription"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "print"]
+- !private ["s25ExpressibleByFloatLiteralP", "type"]
+- !private ["s27ExpressibleByIntegerLiteralP", "JSON"]
+- !private ["s27ExpressibleByIntegerLiteralP", "arrayValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "count"]
+- !private ["s27ExpressibleByIntegerLiteralP", "debugDescription"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "print"]
+- !private ["s27ExpressibleByIntegerLiteralP", "type"]
+- !private ["s23ExpressibleByNilLiteralP", "JSON"]
+- !private ["s23ExpressibleByNilLiteralP", "arrayValue"]
+- !private ["s23ExpressibleByNilLiteralP", "count"]
+- !private ["s23ExpressibleByNilLiteralP", "debugDescription"]
+- !private ["s23ExpressibleByNilLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "print"]
+- !private ["s23ExpressibleByNilLiteralP", "type"]
+- !private ["s26ExpressibleByStringLiteralP", "JSON"]
+- !private ["s26ExpressibleByStringLiteralP", "arrayValue"]
+- !private ["s26ExpressibleByStringLiteralP", "count"]
+- !private ["s26ExpressibleByStringLiteralP", "debugDescription"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "print"]
+- !private ["s26ExpressibleByStringLiteralP", "type"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "JSON"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "arrayValue"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "count"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "debugDescription"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "print"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "type"]
+- !private ["SH", "append"]
+- !private ["SH", "count"]
+- !private ["SH", "init"]
+- !private ["SH", "null"]
+- !private ["SH", "reserveCapacity"]
+- !private ["SH", "unknown"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "JSON"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "arrayValue"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "count"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "debugDescription"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "init"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "internalJson"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "print"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "type"]
+- ["14TelegramBotSDK4JSONV", "Bool"]
+- ["14TelegramBotSDK4JSONV", "InternalJsonConvertible"]
+- ["14TelegramBotSDK4JSONV", "JSON"]
+- !private ["14TelegramBotSDK4JSONV", "arrayValue"]
+- !private ["14TelegramBotSDK4JSONV", "count"]
+- ["14TelegramBotSDK4JSONV", "customArrayValue"]
+- !private ["14TelegramBotSDK4JSONV", "debugDescription"]
+- !private ["14TelegramBotSDK4JSONV", "deinit"]
+- !private ["14TelegramBotSDK4JSONV", "init"]
+- ["14TelegramBotSDK4JSONV", "initFrom"]
+- ["14TelegramBotSDK4JSONV", "isNullOrUnknown"]
+- ["14TelegramBotSDK4JSONV", "prettyPrint"]
+- !private ["14TelegramBotSDK4JSONV", "print"]
+- ["14TelegramBotSDK4JSONV", "twoDArrayValue"]
+- !private ["14TelegramBotSDK4JSONV", "type"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "init"]
+- !private ["SM", "reserveCapacity"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "reserveCapacity"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "init"]
+- !private ["Sk", "reserveCapacity"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- !private ["Sm", "init"]
+- !private ["Sm", "reserveCapacity"]
+- !private ["SY", "JSON"]
+- !private ["SY", "arrayValue"]
+- !private ["SY", "count"]
+- !private ["SY", "debugDescription"]
+- !private ["SY", "init"]
+- !private ["SY", "null"]
+- !private ["SY", "print"]
+- !private ["SY", "type"]
+- !private ["SY", "unknown"]
+- !private ["ST", "JSON"]
+- !private ["ST", "append"]
+- !private ["ST", "arrayValue"]
+- !private ["ST", "count"]
+- !private ["ST", "debugDescription"]
+- !private ["ST", "init"]
+- !private ["ST", "print"]
+- !private ["ST", "reserveCapacity"]
+- !private ["ST", "type"]
+- !private ["14TelegramBotSDK4TypeO", "deinit"]
+- !private ["14TelegramBotSDK4TypeO", "null"]
+- !private ["14TelegramBotSDK4TypeO", "unknown"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "reserveCapacity"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "reserveCapacity"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "reserveCapacity"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reserveCapacity"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "reserveCapacity"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SH"
+- !private "14TelegramBotSDK23InternalJsonConvertibleP"
+- "14TelegramBotSDK4JSONV"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "14TelegramBotSDK4TypeO"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/testProfitBot/testProfitBot/.build/checkouts/telegram-bot-swift/Sources/CCurl/include/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "57f123284c75ab9b67cc73ba96deaab4"

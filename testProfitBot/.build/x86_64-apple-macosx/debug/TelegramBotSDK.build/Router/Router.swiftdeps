@@ -1,0 +1,572 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Router"
+provides-nominal:
+- "14TelegramBotSDK6RouterC"
+provides-member:
+- ["14TelegramBotSDK6RouterC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "!"
+- !private "!="
+- !private "&&"
+- !private "=="
+- !private ">"
+- !private "??"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CharacterSet"
+- "Command"
+- "ContentType"
+- "Context"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "Router"
+- "Scanner"
+- "String"
+- "StringLiteralType"
+- "TelegramBot"
+- "Update"
+depends-member:
+- ["14TelegramBotSDK9ArgumentsC", "isAtEnd"]
+- ["14TelegramBotSDK9ArgumentsC", "scanRestOfString"]
+- ["14TelegramBotSDK9ArgumentsC", "scanWord"]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- ["Sa", "init"]
+- !private ["Sa", "isEmpty"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- ["SK", "init"]
+- !private ["SK", "isEmpty"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "caseSensitive"]
+- !private ["s7CVarArgP", "charactersToBeSkipped"]
+- !private ["s7CVarArgP", "count"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "scanLocation"]
+- !private ["14TelegramBotSDK13CallbackQueryV", "data"]
+- ["10Foundation12CharacterSetV", "whitespacesAndNewlines"]
+- !private ["14TelegramBotSDK6ChatIdP", "isEmpty"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- ["Sl", "init"]
+- !private ["Sl", "isEmpty"]
+- !private ["14TelegramBotSDK7CommandC", "fetchFrom"]
+- !private ["SL", "isEmpty"]
+- ["14TelegramBotSDK11ContentTypeO", "audio"]
+- ["14TelegramBotSDK11ContentTypeO", "callback_query"]
+- ["14TelegramBotSDK11ContentTypeO", "caption"]
+- ["14TelegramBotSDK11ContentTypeO", "channelChatCreated"]
+- ["14TelegramBotSDK11ContentTypeO", "command"]
+- ["14TelegramBotSDK11ContentTypeO", "commands"]
+- ["14TelegramBotSDK11ContentTypeO", "contact"]
+- ["14TelegramBotSDK11ContentTypeO", "deleteChatPhoto"]
+- ["14TelegramBotSDK11ContentTypeO", "document"]
+- ["14TelegramBotSDK11ContentTypeO", "editDate"]
+- ["14TelegramBotSDK11ContentTypeO", "editedAudio"]
+- ["14TelegramBotSDK11ContentTypeO", "editedCaption"]
+- ["14TelegramBotSDK11ContentTypeO", "editedContact"]
+- ["14TelegramBotSDK11ContentTypeO", "editedDocument"]
+- ["14TelegramBotSDK11ContentTypeO", "editedEditDate"]
+- ["14TelegramBotSDK11ContentTypeO", "editedEntities"]
+- ["14TelegramBotSDK11ContentTypeO", "editedForwardDate"]
+- ["14TelegramBotSDK11ContentTypeO", "editedForwardFrom"]
+- ["14TelegramBotSDK11ContentTypeO", "editedForwardFromChat"]
+- ["14TelegramBotSDK11ContentTypeO", "editedFrom"]
+- ["14TelegramBotSDK11ContentTypeO", "editedLocation"]
+- ["14TelegramBotSDK11ContentTypeO", "editedPhoto"]
+- ["14TelegramBotSDK11ContentTypeO", "editedReplyToMessage"]
+- ["14TelegramBotSDK11ContentTypeO", "editedSticker"]
+- ["14TelegramBotSDK11ContentTypeO", "editedText"]
+- ["14TelegramBotSDK11ContentTypeO", "editedVenue"]
+- ["14TelegramBotSDK11ContentTypeO", "editedVideo"]
+- ["14TelegramBotSDK11ContentTypeO", "editedVoice"]
+- ["14TelegramBotSDK11ContentTypeO", "entities"]
+- ["14TelegramBotSDK11ContentTypeO", "forwardDate"]
+- ["14TelegramBotSDK11ContentTypeO", "forwardFrom"]
+- ["14TelegramBotSDK11ContentTypeO", "forwardFromChat"]
+- ["14TelegramBotSDK11ContentTypeO", "from"]
+- ["14TelegramBotSDK11ContentTypeO", "groupChatCreated"]
+- ["14TelegramBotSDK11ContentTypeO", "leftChatMember"]
+- ["14TelegramBotSDK11ContentTypeO", "location"]
+- ["14TelegramBotSDK11ContentTypeO", "migrateFromChatId"]
+- ["14TelegramBotSDK11ContentTypeO", "migrateToChatId"]
+- ["14TelegramBotSDK11ContentTypeO", "newChatMembers"]
+- ["14TelegramBotSDK11ContentTypeO", "newChatPhoto"]
+- ["14TelegramBotSDK11ContentTypeO", "newChatTitle"]
+- ["14TelegramBotSDK11ContentTypeO", "photo"]
+- ["14TelegramBotSDK11ContentTypeO", "pinnedMessage"]
+- ["14TelegramBotSDK11ContentTypeO", "replyToMessage"]
+- ["14TelegramBotSDK11ContentTypeO", "sticker"]
+- ["14TelegramBotSDK11ContentTypeO", "supergroupChatCreated"]
+- ["14TelegramBotSDK11ContentTypeO", "text"]
+- ["14TelegramBotSDK11ContentTypeO", "venue"]
+- ["14TelegramBotSDK11ContentTypeO", "video"]
+- ["14TelegramBotSDK11ContentTypeO", "voice"]
+- ["14TelegramBotSDK7ContextC", "args"]
+- !private ["14TelegramBotSDK7ContextC", "init"]
+- ["14TelegramBotSDK7ContextC", "privateChat"]
+- ["14TelegramBotSDK7ContextC", "respondAsync"]
+- !private ["14TelegramBotSDK7ContextC", "update"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "audio"]
+- !private ["s28CustomDebugStringConvertibleP", "callbackQuery"]
+- !private ["s28CustomDebugStringConvertibleP", "caption"]
+- !private ["s28CustomDebugStringConvertibleP", "caseSensitive"]
+- !private ["s28CustomDebugStringConvertibleP", "channelChatCreated"]
+- !private ["s28CustomDebugStringConvertibleP", "charactersToBeSkipped"]
+- !private ["s28CustomDebugStringConvertibleP", "contact"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "deleteChatPhoto"]
+- !private ["s28CustomDebugStringConvertibleP", "document"]
+- !private ["s28CustomDebugStringConvertibleP", "editDate"]
+- !private ["s28CustomDebugStringConvertibleP", "editedMessage"]
+- !private ["s28CustomDebugStringConvertibleP", "entities"]
+- !private ["s28CustomDebugStringConvertibleP", "extractCommand"]
+- !private ["s28CustomDebugStringConvertibleP", "forwardDate"]
+- !private ["s28CustomDebugStringConvertibleP", "forwardFrom"]
+- !private ["s28CustomDebugStringConvertibleP", "forwardFromChat"]
+- !private ["s28CustomDebugStringConvertibleP", "from"]
+- !private ["s28CustomDebugStringConvertibleP", "groupChatCreated"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "leftChatMember"]
+- !private ["s28CustomDebugStringConvertibleP", "location"]
+- !private ["s28CustomDebugStringConvertibleP", "message"]
+- !private ["s28CustomDebugStringConvertibleP", "migrateFromChatId"]
+- !private ["s28CustomDebugStringConvertibleP", "migrateToChatId"]
+- !private ["s28CustomDebugStringConvertibleP", "newChatMembers"]
+- !private ["s28CustomDebugStringConvertibleP", "newChatPhoto"]
+- !private ["s28CustomDebugStringConvertibleP", "newChatTitle"]
+- !private ["s28CustomDebugStringConvertibleP", "photo"]
+- !private ["s28CustomDebugStringConvertibleP", "pinnedMessage"]
+- !private ["s28CustomDebugStringConvertibleP", "replyToMessage"]
+- !private ["s28CustomDebugStringConvertibleP", "scanLocation"]
+- !private ["s28CustomDebugStringConvertibleP", "sticker"]
+- !private ["s28CustomDebugStringConvertibleP", "supergroupChatCreated"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "venue"]
+- !private ["s28CustomDebugStringConvertibleP", "video"]
+- !private ["s28CustomDebugStringConvertibleP", "voice"]
+- ["s28CustomDebugStringConvertibleP", "whitespacesAndNewlines"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- ["s23CustomStringConvertibleP", "appendInterpolation"]
+- ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "audio"]
+- !private ["s23CustomStringConvertibleP", "callbackQuery"]
+- !private ["s23CustomStringConvertibleP", "caption"]
+- !private ["s23CustomStringConvertibleP", "caseSensitive"]
+- !private ["s23CustomStringConvertibleP", "channelChatCreated"]
+- !private ["s23CustomStringConvertibleP", "charactersToBeSkipped"]
+- !private ["s23CustomStringConvertibleP", "contact"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "deleteChatPhoto"]
+- !private ["s23CustomStringConvertibleP", "document"]
+- !private ["s23CustomStringConvertibleP", "editDate"]
+- !private ["s23CustomStringConvertibleP", "editedMessage"]
+- !private ["s23CustomStringConvertibleP", "entities"]
+- !private ["s23CustomStringConvertibleP", "extractCommand"]
+- !private ["s23CustomStringConvertibleP", "forwardDate"]
+- !private ["s23CustomStringConvertibleP", "forwardFrom"]
+- !private ["s23CustomStringConvertibleP", "forwardFromChat"]
+- !private ["s23CustomStringConvertibleP", "from"]
+- !private ["s23CustomStringConvertibleP", "groupChatCreated"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "leftChatMember"]
+- !private ["s23CustomStringConvertibleP", "location"]
+- !private ["s23CustomStringConvertibleP", "message"]
+- !private ["s23CustomStringConvertibleP", "migrateFromChatId"]
+- !private ["s23CustomStringConvertibleP", "migrateToChatId"]
+- !private ["s23CustomStringConvertibleP", "newChatMembers"]
+- !private ["s23CustomStringConvertibleP", "newChatPhoto"]
+- !private ["s23CustomStringConvertibleP", "newChatTitle"]
+- !private ["s23CustomStringConvertibleP", "photo"]
+- !private ["s23CustomStringConvertibleP", "pinnedMessage"]
+- !private ["s23CustomStringConvertibleP", "replyToMessage"]
+- !private ["s23CustomStringConvertibleP", "scanLocation"]
+- !private ["s23CustomStringConvertibleP", "sticker"]
+- !private ["s23CustomStringConvertibleP", "supergroupChatCreated"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "venue"]
+- !private ["s23CustomStringConvertibleP", "video"]
+- !private ["s23CustomStringConvertibleP", "voice"]
+- ["s23CustomStringConvertibleP", "whitespacesAndNewlines"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "isEmpty"]
+- !private ["Se", "append"]
+- !private ["Se", "count"]
+- ["Se", "init"]
+- !private ["Se", "isEmpty"]
+- ["Se", "whitespacesAndNewlines"]
+- ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "append"]
+- !private ["SE", "count"]
+- ["SE", "init"]
+- !private ["SE", "isEmpty"]
+- ["SE", "whitespacesAndNewlines"]
+- !private ["SQ", "append"]
+- !private ["SQ", "caseSensitive"]
+- !private ["SQ", "charactersToBeSkipped"]
+- !private ["SQ", "count"]
+- ["SQ", "init"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "scanLocation"]
+- ["SQ", "whitespacesAndNewlines"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- ["s25ExpressibleByArrayLiteralP", "whitespacesAndNewlines"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s32ExpressibleByStringInterpolationP", "isEmpty"]
+- !private ["s26ExpressibleByStringLiteralP", "isEmpty"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
+- !private ["14TelegramBotSDK8FileInfoP", "isEmpty"]
+- !private ["SH", "append"]
+- !private ["SH", "caseSensitive"]
+- !private ["SH", "charactersToBeSkipped"]
+- !private ["SH", "count"]
+- ["SH", "init"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "scanLocation"]
+- ["SH", "whitespacesAndNewlines"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "audio"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "callbackQuery"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "caption"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "channelChatCreated"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "contact"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "data"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "deleteChatPhoto"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "document"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "editDate"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "editedMessage"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "entities"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "extractCommand"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "forwardDate"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "forwardFrom"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "forwardFromChat"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "from"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "groupChatCreated"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "isEmpty"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "leftChatMember"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "location"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "message"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "migrateFromChatId"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "migrateToChatId"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "newChatMembers"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "newChatPhoto"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "newChatTitle"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "photo"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "pinnedMessage"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "replyToMessage"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "sticker"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "supergroupChatCreated"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "text"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "venue"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "video"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "voice"]
+- !private ["14TelegramBotSDK17JSONSubscriptTypeP", "isEmpty"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "audio"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "callbackQuery"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "caption"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "channelChatCreated"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "contact"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "data"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "deleteChatPhoto"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "document"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "editDate"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "editedMessage"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "entities"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "extractCommand"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "forwardDate"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "forwardFrom"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "forwardFromChat"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "from"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "groupChatCreated"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "isEmpty"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "leftChatMember"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "location"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "message"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "migrateFromChatId"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "migrateToChatId"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "newChatMembers"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "newChatPhoto"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "newChatTitle"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "photo"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "pinnedMessage"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "replyToMessage"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "sticker"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "supergroupChatCreated"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "text"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "venue"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "video"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "voice"]
+- !private ["s25LosslessStringConvertibleP", "isEmpty"]
+- !private ["14TelegramBotSDK7MessageV", "audio"]
+- !private ["14TelegramBotSDK7MessageV", "caption"]
+- !private ["14TelegramBotSDK7MessageV", "channelChatCreated"]
+- !private ["14TelegramBotSDK7MessageV", "contact"]
+- !private ["14TelegramBotSDK7MessageV", "deleteChatPhoto"]
+- !private ["14TelegramBotSDK7MessageV", "document"]
+- !private ["14TelegramBotSDK7MessageV", "editDate"]
+- !private ["14TelegramBotSDK7MessageV", "entities"]
+- !private ["14TelegramBotSDK7MessageV", "extractCommand"]
+- !private ["14TelegramBotSDK7MessageV", "forwardDate"]
+- !private ["14TelegramBotSDK7MessageV", "forwardFrom"]
+- !private ["14TelegramBotSDK7MessageV", "forwardFromChat"]
+- !private ["14TelegramBotSDK7MessageV", "from"]
+- !private ["14TelegramBotSDK7MessageV", "groupChatCreated"]
+- !private ["14TelegramBotSDK7MessageV", "leftChatMember"]
+- !private ["14TelegramBotSDK7MessageV", "location"]
+- !private ["14TelegramBotSDK7MessageV", "migrateFromChatId"]
+- !private ["14TelegramBotSDK7MessageV", "migrateToChatId"]
+- !private ["14TelegramBotSDK7MessageV", "newChatMembers"]
+- !private ["14TelegramBotSDK7MessageV", "newChatPhoto"]
+- !private ["14TelegramBotSDK7MessageV", "newChatTitle"]
+- !private ["14TelegramBotSDK7MessageV", "photo"]
+- !private ["14TelegramBotSDK7MessageV", "pinnedMessage"]
+- !private ["14TelegramBotSDK7MessageV", "replyToMessage"]
+- !private ["14TelegramBotSDK7MessageV", "sticker"]
+- !private ["14TelegramBotSDK7MessageV", "supergroupChatCreated"]
+- !private ["14TelegramBotSDK7MessageV", "text"]
+- !private ["14TelegramBotSDK7MessageV", "venue"]
+- !private ["14TelegramBotSDK7MessageV", "video"]
+- !private ["14TelegramBotSDK7MessageV", "voice"]
+- !private ["s10MirrorPathP", "isEmpty"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- ["SM", "init"]
+- !private ["SM", "isEmpty"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "isEmpty"]
+- !private ["So8NSCodingP", "isEmpty"]
+- !private ["So9NSCopyingP", "caseSensitive"]
+- !private ["So9NSCopyingP", "charactersToBeSkipped"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "isEmpty"]
+- !private ["So9NSCopyingP", "scanLocation"]
+- !private ["So21NSItemProviderReadingP", "isEmpty"]
+- !private ["So21NSItemProviderWritingP", "isEmpty"]
+- !private ["So16NSMutableCopyingP", "isEmpty"]
+- !private ["So8NSObjectC", "caseSensitive"]
+- !private ["So8NSObjectC", "charactersToBeSkipped"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isEmpty"]
+- !private ["So8NSObjectC", "scanLocation"]
+- !private ["So8NSObjectP", "caseSensitive"]
+- !private ["So8NSObjectP", "charactersToBeSkipped"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isEmpty"]
+- !private ["So8NSObjectP", "scanLocation"]
+- !private ["So14NSSecureCodingP", "isEmpty"]
+- !private ["So8NSStringC", "isEmpty"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- ["Sk", "init"]
+- !private ["Sk", "isEmpty"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- ["Sm", "init"]
+- !private ["Sm", "isEmpty"]
+- ["10Foundation20ReferenceConvertibleP", "whitespacesAndNewlines"]
+- !private ["14TelegramBotSDK6RouterC", "$__lazy_storage_$_partialMatch"]
+- !private ["14TelegramBotSDK6RouterC", "$__lazy_storage_$_unmatched"]
+- !private ["14TelegramBotSDK6RouterC", "$__lazy_storage_$_unsupportedContentType"]
+- ["14TelegramBotSDK6RouterC", "AnyObject"]
+- ["14TelegramBotSDK6RouterC", "Bool"]
+- ["14TelegramBotSDK6RouterC", "CharacterSet"]
+- ["14TelegramBotSDK6RouterC", "Command"]
+- ["14TelegramBotSDK6RouterC", "ContentType"]
+- ["14TelegramBotSDK6RouterC", "Context"]
+- ["14TelegramBotSDK6RouterC", "Handler"]
+- ["14TelegramBotSDK6RouterC", "Path"]
+- ["14TelegramBotSDK6RouterC", "Router"]
+- ["14TelegramBotSDK6RouterC", "Scanner"]
+- ["14TelegramBotSDK6RouterC", "String"]
+- ["14TelegramBotSDK6RouterC", "TelegramBot"]
+- ["14TelegramBotSDK6RouterC", "Update"]
+- ["14TelegramBotSDK6RouterC", "add"]
+- ["14TelegramBotSDK6RouterC", "bot"]
+- ["14TelegramBotSDK6RouterC", "caseSensitive"]
+- ["14TelegramBotSDK6RouterC", "charactersToBeSkipped"]
+- ["14TelegramBotSDK6RouterC", "checkPartialMatch"]
+- ["14TelegramBotSDK6RouterC", "deinit"]
+- ["14TelegramBotSDK6RouterC", "handler"]
+- ["14TelegramBotSDK6RouterC", "init"]
+- ["14TelegramBotSDK6RouterC", "match"]
+- ["14TelegramBotSDK6RouterC", "partialMatch"]
+- ["14TelegramBotSDK6RouterC", "paths"]
+- ["14TelegramBotSDK6RouterC", "process"]
+- ["14TelegramBotSDK6RouterC", "unmatched"]
+- ["14TelegramBotSDK6RouterC", "unsupportedContentType"]
+- !private ["So9NSScannerC", "caseSensitive"]
+- !private ["So9NSScannerC", "charactersToBeSkipped"]
+- !private ["So9NSScannerC", "init"]
+- !private ["So9NSScannerC", "scanLocation"]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
+- ["ST", "init"]
+- !private ["ST", "isEmpty"]
+- ["s10SetAlgebraP", "whitespacesAndNewlines"]
+- !private ["SS", "isEmpty"]
+- ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "isEmpty"]
+- ["s16TextOutputStreamP", "appendInterpolation"]
+- ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "isEmpty"]
+- !private ["s20TextOutputStreamableP", "isEmpty"]
+- !private ["14TelegramBotSDK6UpdateV", "callbackQuery"]
+- !private ["14TelegramBotSDK6UpdateV", "editedMessage"]
+- !private ["14TelegramBotSDK6UpdateV", "message"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "isEmpty"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "isEmpty"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "isEmpty"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "caseSensitive"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "charactersToBeSkipped"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanLocation"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "caseSensitive"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "charactersToBeSkipped"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isEmpty"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scanLocation"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- ["s21_ObjectiveCBridgeableP", "whitespacesAndNewlines"]
+depends-nominal:
+- "14TelegramBotSDK9ArgumentsC"
+- "Sa"
+- "SK"
+- "s7CVarArgP"
+- !private "14TelegramBotSDK13CallbackQueryV"
+- "10Foundation12CharacterSetV"
+- !private "14TelegramBotSDK6ChatIdP"
+- "Sl"
+- !private "14TelegramBotSDK7CommandC"
+- !private "SL"
+- "14TelegramBotSDK11ContentTypeO"
+- "14TelegramBotSDK7ContextC"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
+- "Se"
+- "s26DefaultStringInterpolationV"
+- "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "14TelegramBotSDK8FileInfoP"
+- "SH"
+- !private "14TelegramBotSDK23InternalJsonConvertibleP"
+- !private "14TelegramBotSDK17JSONSubscriptTypeP"
+- !private "14TelegramBotSDK15JsonConvertibleP"
+- !private "s25LosslessStringConvertibleP"
+- !private "14TelegramBotSDK7MessageV"
+- !private "s10MirrorPathP"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- "Sk"
+- "Sm"
+- "10Foundation20ReferenceConvertibleP"
+- "14TelegramBotSDK6RouterC"
+- !private "So9NSScannerC"
+- "ST"
+- "s10SetAlgebraP"
+- !private "SS"
+- "s27StringInterpolationProtocolP"
+- !private "Sy"
+- "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "14TelegramBotSDK6UpdateV"
+- "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/testProfitBot/testProfitBot/.build/checkouts/telegram-bot-swift/Sources/CCurl/include/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "7f559cb9c98a9e44fe2a84aa89213b10"

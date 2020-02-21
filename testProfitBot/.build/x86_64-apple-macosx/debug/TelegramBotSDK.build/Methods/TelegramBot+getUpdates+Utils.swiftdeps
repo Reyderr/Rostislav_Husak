@@ -1,0 +1,202 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["14TelegramBotSDK0aB0C", ""]
+- ["14TelegramBotSDK0aB0C", "nextUpdateSync"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "+"
+- !private "+="
+- !private "=="
+- !private ">"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "CURLE_COULDNT_CONNECT"
+- !private "CURLE_COULDNT_RESOLVE_HOST"
+- !private "CURLE_COULDNT_RESOLVE_PROXY"
+- !private "CURLE_OPERATION_TIMEDOUT"
+- !private "CURLE_RECV_ERROR"
+- !private "CURLE_SEND_ERROR"
+- !private "CURLE_SSL_CONNECT_ERROR"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "StringLiteralType"
+- "TelegramBot"
+- "Update"
+- !private "||"
+- !private "~="
+depends-member:
+- !private ["Sa", "first"]
+- !private ["Sa", "isEmpty"]
+- !private ["Sa", "remove"]
+- !private ["SK", "first"]
+- !private ["SK", "isEmpty"]
+- !private ["SK", "remove"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "remove"]
+- !private ["Sl", "first"]
+- !private ["Sl", "isEmpty"]
+- !private ["Sl", "remove"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["10Foundation15ContiguousBytesP", "isEmpty"]
+- !private ["10Foundation15ContiguousBytesP", "remove"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- ["s28CustomDebugStringConvertibleP", "libcurlError"]
+- !private ["s28CustomDebugStringConvertibleP", "remove"]
+- !private ["s28CustomDebugStringConvertibleP", "updateId"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "remove"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "remove"]
+- !private ["s23CustomStringConvertibleP", "updateId"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["10Foundation12DataProtocolP", "isEmpty"]
+- !private ["10Foundation12DataProtocolP", "remove"]
+- ["14TelegramBotSDK13DataTaskErrorO", "libcurlError"]
+- !private ["Se", "first"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "remove"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "first"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "remove"]
+- !private ["SQ", "first"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "remove"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "remove"]
+- !private ["SH", "first"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "remove"]
+- !private ["14TelegramBotSDK23InternalJsonConvertibleP", "updateId"]
+- !private ["14TelegramBotSDK15JsonConvertibleP", "updateId"]
+- !private ["SM", "first"]
+- !private ["SM", "isEmpty"]
+- !private ["SM", "remove"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "isEmpty"]
+- !private ["10Foundation19MutableDataProtocolP", "remove"]
+- !private ["Sk", "first"]
+- !private ["Sk", "isEmpty"]
+- !private ["Sk", "remove"]
+- !private ["Sm", "first"]
+- !private ["Sm", "isEmpty"]
+- !private ["Sm", "remove"]
+- !private ["ST", "first"]
+- !private ["ST", "isEmpty"]
+- !private ["ST", "remove"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["14TelegramBotSDK0aB0C", "CURLE_COULDNT_CONNECT"]
+- !private ["14TelegramBotSDK0aB0C", "CURLE_COULDNT_RESOLVE_HOST"]
+- !private ["14TelegramBotSDK0aB0C", "CURLE_COULDNT_RESOLVE_PROXY"]
+- !private ["14TelegramBotSDK0aB0C", "CURLE_OPERATION_TIMEDOUT"]
+- !private ["14TelegramBotSDK0aB0C", "CURLE_RECV_ERROR"]
+- !private ["14TelegramBotSDK0aB0C", "CURLE_SEND_ERROR"]
+- !private ["14TelegramBotSDK0aB0C", "CURLE_SSL_CONNECT_ERROR"]
+- ["14TelegramBotSDK0aB0C", "Update"]
+- !private ["14TelegramBotSDK0aB0C", "autoReconnect"]
+- !private ["14TelegramBotSDK0aB0C", "defaultUpdatesLimit"]
+- !private ["14TelegramBotSDK0aB0C", "defaultUpdatesTimeout"]
+- !private ["14TelegramBotSDK0aB0C", "getUpdatesSync"]
+- !private ["14TelegramBotSDK0aB0C", "lastError"]
+- !private ["14TelegramBotSDK0aB0C", "logger"]
+- !private ["14TelegramBotSDK0aB0C", "nextOffset"]
+- ["14TelegramBotSDK0aB0C", "nextUpdateSync"]
+- !private ["14TelegramBotSDK0aB0C", "reconnectDelay"]
+- !private ["14TelegramBotSDK0aB0C", "unprocessedUpdates"]
+- !private ["14TelegramBotSDK0aB0C", "wait"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["14TelegramBotSDK6UpdateV", "updateId"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "isEmpty"]
+- !private ["s14_ArrayProtocolP", "remove"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "remove"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s19_HasContiguousBytesP", "isEmpty"]
+- !private ["s19_HasContiguousBytesP", "remove"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "remove"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "remove"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- "14TelegramBotSDK13DataTaskErrorO"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- !private "14TelegramBotSDK23InternalJsonConvertibleP"
+- !private "14TelegramBotSDK15JsonConvertibleP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "s27StringInterpolationProtocolP"
+- "14TelegramBotSDK0aB0C"
+- !private "s16TextOutputStreamP"
+- !private "14TelegramBotSDK6UpdateV"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/user/testProfitBot/testProfitBot/.build/checkouts/telegram-bot-swift/Sources/CCurl/include/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "73b45355fb0bba5f61d38ad6b9437ff0"
