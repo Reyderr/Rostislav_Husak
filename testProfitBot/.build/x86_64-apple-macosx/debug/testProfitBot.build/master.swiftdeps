@@ -1,5 +1,0 @@
-version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
-options: "103094ab5bc1f268955cfbdf643b4a2c"
-build_time: [1582291467, 768406000]
-inputs:
-  "/Users/user/testProfitBot/testProfitBot/Sources/testProfitBot/main.swift": [1582291175, 824909011]
